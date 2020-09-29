@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: .5rem;
+            overflow: hidden;
+        }
+        input:focus,textarea:focus {
+            outline: none;
+        }
+
+        .container {
+            height: 80vh;
+            padding: 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.603);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            font-weight: normal;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hubungi kami</h1>
+        <h3><strong>Kantor</strong> : dijalan belum jadi</h3>
+        <h3><strong>Nomor Telepon</strong> : 0881 8812 8822</h3>
+        <h3><strong>Email</strong> : email@contoh.com</h3>
+
+        <h2 style="margin-bottom: 2rem;">Kirimkan Pesan</h2>
+        <form>
+            <div>
+                <label for="name" style="margin-right: 4rem;"><strong>Nama</strong></label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div style="margin: 1rem 0;">
+                <label for="email" style="margin-right: 4rem;"><strong>Email</strong></label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div style="display: flex;align-items: flex-end;">
+                <div>
+                    <label for="gender" style="margin-right: 1.5rem;"><strong>Jenis Kelamin</strong></label>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <div>
+                        <input type="radio" name="gender" value="male">
+                        <label for="male">Laki-Laki</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="female">
+                        <label for="female">Perempuan</label>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 2rem 0;">
+                <label for="message" style="margin-right: 4rem;">Pesan Anda</label>
+                <textarea name="message" cols="30" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+    <a href="index.html" style="position: absolute; bottom: 5vh;right: 5vw;">Kembali Ke Index</a>
+
+</body>
+
+</html>
